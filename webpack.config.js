@@ -1,22 +1,16 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/ghostme.ts',
+  entry: './src/its.js',
   mode: 'development',
   module: {
-    rules: [
-      {
-        test: /\.ts$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
-      },
-    ],
-  },
-  resolve: {
-    extensions: ['.ts', '.js'],
-  },
+  rules: [
+    { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+  ]
+},
   output: {
     filename: 'its.js',
     path: path.resolve(__dirname, 'dist'),
   },
 };
+
