@@ -1,0 +1,27 @@
+{
+  "name": "its",
+  "version": "1.0.0",
+  "description": "Detect trailing spaces in all the inputs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack",
+    "build:prod": "webpack --mode=production",
+    "start": "web-ext run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^5.3.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "@typescript-eslint/eslint-plugin": "^1.4.2",
+    "@typescript-eslint/parser": "^1.4.2",
+    "eslint": "^5.15.3",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4",
+    "typescript": "^3.3.3333"
+  }
+}
