@@ -1,5 +1,7 @@
 import { regex, warning } from '../utils/util';
 
+// const memoryStorage = [];
+
 /**
  * @param {Event} event
  */

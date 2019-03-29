@@ -1,7 +1,9 @@
 import keyUpListener from './listeners/keyUpListener';
-import findTargets from './utils/inputs';
+import { findTargets, generateIdentifiers } from './utils/inputs';
 
 const targets = findTargets();
+
+generateIdentifiers(targets);
 
 if (targets.length !== 0) {
   targets.forEach(target => {
