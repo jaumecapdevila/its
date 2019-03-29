@@ -12,8 +12,10 @@
     "start": "web-ext run"
   },
   "husky": {
-    "pre-commit": "npm run lint",
-    "pre-push": "npm test"
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm test"
+    }
   },
   "keywords": [],
   "author": "",
