@@ -1,6 +1,6 @@
 import { regex, warning } from '../utils/util';
 
-// const memoryStorage = [];
+const memoryStorage = {};
 
 /**
  * @param {Event} event
@@ -8,8 +8,11 @@ import { regex, warning } from '../utils/util';
 export default event => {
   const { target } = event;
   if (target.value.match(regex) !== null) {
+    if (memoryStorage[target.id] === undefined) {
+      memoryStorage[target.id] = target.style.color;
+    }
     target.style.color = warning;
   } else {
-    target.style.color = 'inherit';
+    target.style.color = memoryStorage[target.id];
   }
 };
