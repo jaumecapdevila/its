@@ -5,7 +5,6 @@ import { regex, warning } from '../utils/util';
  */
 export default event => {
   const { target } = event;
-
   if (target.value.match(regex) !== null) {
     target.style.color = warning;
   } else {

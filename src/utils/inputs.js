@@ -1,14 +1,8 @@
-const targets = ['text', 'search', 'email'];
+const targets = ['input[type="text"]', 'input[type="search"]'];
 
 /**
  * @returns {Array}
  */
 export default function findTargets() {
-  const inputs = [];
-
-  targets.forEach(target => {
-    inputs.push(document.querySelectorAll(target));
-  });
-
-  return inputs;
+  return document.querySelectorAll(targets.join(','));
 }
