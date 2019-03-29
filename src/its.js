@@ -1,15 +1,10 @@
-import { regex, warning } from './utils/util';
+import keyUpListener from './listeners/keyUpListener';
+import findTargets from './utils/inputs';
 
-const inputs = document.querySelectorAll('input[type=text]');
+const targets = findTargets();
 
-if (inputs.length !== 0) {
-  inputs.forEach(input => {
-    input.addEventListener('keyup', () => {
-      if (input.value.match(regex) !== null) {
-        input.style.color = warning;
-      } else {
-        input.style.color = 'inherit';
-      }
-    });
+if (targets.length !== 0) {
+  targets.forEach(target => {
+    target.addEventListener('keyup', keyUpListener);
   });
 }
