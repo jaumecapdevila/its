@@ -29,6 +29,12 @@ Execute the command `npm test`.
 * 0.1.0
   * Initial version
 
+## Roadmap
+
+- [ ] Custom warning color
+- [ ] Shortcut to trim all the trailing spaces
+- [ ] Support more input types
+
 ## Meta
 
 Jaume Capdevila – [@otherjaume](https://twitter.com/otherjaume) – contact@jaumecapdevila.net
