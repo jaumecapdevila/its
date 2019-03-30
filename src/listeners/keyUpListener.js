@@ -7,6 +7,7 @@ const memoryStorage = {};
  */
 export default event => {
   const { target } = event;
+
   if (target.value.match(regex) !== null) {
     if (memoryStorage[target.id] === undefined) {
       memoryStorage[target.id] = target.style.color;

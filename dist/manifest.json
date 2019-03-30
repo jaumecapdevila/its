@@ -2,7 +2,10 @@
   "manifest_version": 2,
   "name": "its",
   "version": "0.1.0",
-  "description": "Detect input trailing spaces",
+  "description": "Detect trailing spaces while you type in any text or search input",
+  "icons": {
+    "48": "assets/its_icon_48.png"
+  },
   "content_scripts": [
     {
       "matches": [

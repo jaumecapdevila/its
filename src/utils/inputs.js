@@ -14,10 +14,11 @@ const findTargets = function findTargets() {
  * @param {Array} elements
  */
 const generateIdentifiers = elements => {
-  const counter = 1;
+  let counter = 1;
   elements.forEach(element => {
     if (!element.id) {
       element.id = `${baseId}-${counter}`;
+      counter += 1;
     }
   });
 };
