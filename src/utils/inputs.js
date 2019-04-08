@@ -1,5 +1,7 @@
 const targets = ['input[type="text"]', 'input[type="search"]'];
 
+const focused = 'input:focus';
+
 const baseId = 'its-identifier';
 
 /**
@@ -7,6 +9,13 @@ const baseId = 'its-identifier';
  */
 const findTargets = function findTargets() {
   return document.querySelectorAll(targets.join(','));
+};
+
+/**
+ * @returns {(Element|null)}
+ */
+const getFocused = function getFocused() {
+  return document.querySelector(focused);
 };
 
 /**
@@ -23,4 +32,4 @@ const generateIdentifiers = elements => {
   });
 };
 
-export { findTargets, generateIdentifiers };
+export { findTargets, getFocused, generateIdentifiers };
