@@ -26,13 +26,16 @@ Execute the command `npm test`.
 
 ## Release History
 
+* 0.2.0
+  * Trim trailing spaces on focus lost
 * 0.1.0
   * Initial version
 
 ## Roadmap
 
 - [ ] Custom warning color
-- [ ] Shortcut to trim all the trailing spaces
+- [x] Trim trailing spaces on focust lost
+- [ ] Add config to disable automatic trailing
 - [ ] Support more input types
 
 ## Meta
