@@ -6,14 +6,6 @@
   "icons": {
     "48": "assets/its_icon_48.png"
   },
-  "commands": {
-    "trim-trailing-spaces": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+F"
-      },
-      "description": "Trim the trailing spaces of the focused input"
-    }
-  },
   "content_scripts": [
     {
       "matches": [

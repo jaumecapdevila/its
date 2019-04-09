@@ -6,14 +6,14 @@ const name = 'trim-trailing-spaces';
 /**
  * Trim the trailing spaces of all the inputs
  */
-const command = function command() {
+const trimTrailingSpaces = function command() {
   const target = getFocused();
 
   if (!target) {
     return;
   }
 
-  target.value.replace(regex, ' ');
+  target.value = target.value.replace(regex, ' ');
 };
 
-export { name, command };
+export { name, trimTrailingSpaces };
