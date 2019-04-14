@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="assets/css/options.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <section class="settings">
-      <label for="auto-trim">Trim trailing spaces automatically</label>
-      <input type="checkbox" name="checkbox" id="auto-trim" />
+        <div class="field">
+            <div class="control">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Trim trailing spaces automatically
+                </label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+                <button class="button is-link" id="save-button">Submit</button>
+            </div>
+        </div>
     </section>
-    <input type="button" value="Save preferences" id="save-button" />
     <script src="assets/js/options.js"></script>
-  </body>
+</body>
+
 </html>
