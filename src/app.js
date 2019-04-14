@@ -1,6 +1,6 @@
 import { findTargets, generateIdentifiers } from './utils/inputs';
 
-import register from './listeners/register';
+import register from './listener/register';
 
 export default config => {
   const targets = findTargets();

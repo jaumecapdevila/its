@@ -1,5 +1,5 @@
 import { findTargets } from '../src/utils/inputs';
-import register from '../src/listeners/register';
+import register from '../src/listener/register';
 import { warning } from '../src/utils/util';
 
 test('Inputs of type "search" should be matched', () => {
