@@ -1,6 +1,6 @@
 const regex = /[ \t]{2,}/g;
 
-const warning = '#F92672';
+const warning = 'rgb(249, 38, 114)';
 
 /**
  * @param {Object} object
