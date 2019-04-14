@@ -1,4 +1,4 @@
-import { regex } from '../utils/util';
+import { regex, replacement } from '../utils/util';
 
 import storage from '../storage/memory';
 
@@ -7,6 +7,6 @@ import storage from '../storage/memory';
  */
 export default event => {
   const { target } = event;
-  target.value = target.value.replace(regex, ' ');
+  target.value = target.value.replace(regex, replacement);
   target.style.color = storage[target.id];
 };

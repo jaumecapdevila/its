@@ -1,4 +1,4 @@
-import { regex } from '../utils/util';
+import { regex, replacement } from '../utils/util';
 import { getFocused } from '../utils/inputs';
 
 const name = 'trim-trailing-spaces';
@@ -13,7 +13,7 @@ const trimTrailingSpaces = function command() {
     return;
   }
 
-  target.value = target.value.replace(regex, ' ');
+  target.value = target.value.replace(regex, replacement);
 };
 
 export { name, trimTrailingSpaces };
