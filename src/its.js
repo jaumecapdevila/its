@@ -1,16 +1,11 @@
-import keyUpListener from './listeners/keyUpListener';
+import run from './app';
 
-import blurListener from './listeners/blurListener';
+import { isEmpty, hasProperty } from './utils/util';
 
-import { findTargets, generateIdentifiers } from './utils/inputs';
+import { name, defaults } from './config/settings';
 
-const targets = findTargets();
+const userConfig = browser.storage.local.get();
 
-generateIdentifiers(targets);
-
-if (targets.length !== 0) {
-  targets.forEach(target => {
-    target.addEventListener('keyup', keyUpListener);
-    target.addEventListener('blur', blurListener);
-  });
-}
+userConfig.then(config => {
+  run(isEmpty(config) || !hasProperty(config, name) ? defaults : config);
+});

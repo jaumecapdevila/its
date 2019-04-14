@@ -9,6 +9,9 @@ module.exports = {
     browser: true,
     jest: true,
   },
+  globals: {
+    "browser": false
+  },
   rules: {
     'no-param-reassign': 0,
   },

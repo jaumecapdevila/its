@@ -6,6 +6,9 @@
   "icons": {
     "48": "assets/its_icon_48.png"
   },
+  "permissions": [
+    "storage"
+  ],
   "content_scripts": [
     {
       "matches": [
