@@ -7,7 +7,7 @@
     "48": "assets/icons/its_icon_48.png"
   },
   "options_ui": {
-    "page": "options/options.html"
+    "page": "options.html"
   },
   "permissions": [
     "storage"
@@ -18,7 +18,7 @@
         "<all_urls>"
       ],
       "js": [
-        "assets/js/its.js"
+        "assets/js/app.js"
       ]
     }
   ]
