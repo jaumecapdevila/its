@@ -4,7 +4,10 @@
   "version": "0.2.0",
   "description": "Detect trailing spaces while you type in any text or search input",
   "icons": {
-    "48": "assets/its_icon_48.png"
+    "48": "assets/icons/its_icon_48.png"
+  },
+  "options_ui": {
+    "page": "options/options.html"
   },
   "permissions": [
     "storage"
@@ -15,7 +18,7 @@
         "<all_urls>"
       ],
       "js": [
-        "its.js"
+        "assets/js/its.js"
       ]
     }
   ]

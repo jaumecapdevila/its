@@ -7,7 +7,7 @@ module.exports = {
     rules: [{ test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }],
   },
   output: {
-    filename: 'its.js',
+    filename: 'assets/js/its.js',
     path: path.resolve(__dirname, 'dist'),
   },
 };
