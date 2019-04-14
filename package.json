@@ -6,6 +6,8 @@
   "scripts": {
     "test": "jest",
     "build:dev": "webpack",
+    "build:css": "node-sass --omit-source-map-url _sass/options.scss ./dist/assets/css/options.css",
+    "watch:css": "npm run build:css -- --watch",
     "watch:dev": "webpack --watch",
     "build:prod": "webpack --mode=production",
     "lint": "eslint ./src",
@@ -34,8 +36,12 @@
     "eslint-plugin-prettier": "^3.0.1",
     "husky": "^1.3.1",
     "jest": "^24.5.0",
+    "node-sass": "^4.11.0",
     "prettier": "^1.16.4",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "bulma": "^0.7.4"
   }
 }
