@@ -1,17 +1,14 @@
-const saveButton = document.getElementById('save-button');
+const autoTrim = document.getElementById('auto-trim');
 
-saveButton.addEventListener('click', () => {
-  const checkbox = document.getElementById('auto-trim');
-  if (checkbox) {
-    browser.storage.local.set({
-      trimOnFocustLost: checkbox.checked,
-    });
-  }
+autoTrim.addEventListener('click', event => {
+  const { target } = event;
+  browser.storage.local.set({
+    trimOnFocustLost: target.checked,
+  });
 });
 
 browser.storage.local.get().then(userSettings => {
-  const checkbox = document.getElementById('auto-trim');
-  if (checkbox) {
-    checkbox.checked = userSettings.trimOnFocustLost;
+  if (autoTrim) {
+    autoTrim.checked = userSettings.trimOnFocustLost;
   }
 });
