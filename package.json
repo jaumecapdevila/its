@@ -38,7 +38,7 @@
     "jest": "^24.5.0",
     "node-sass": "^4.11.0",
     "prettier": "^1.16.4",
-    "webpack": "^4.29.6",
+    "webpack": "^4.32.2",
     "webpack-cli": "^3.3.0"
   },
   "dependencies": {
